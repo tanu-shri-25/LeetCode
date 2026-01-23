@@ -1,5 +1,5 @@
 class Solution{
-    public String reverseString(char[] s){
+    public void reverseString(char[] s){
         int i=0;
         int j=s.length-1;
         while(i<j){
@@ -9,6 +9,6 @@ class Solution{
             i++;
             j--;
         }
-        return new String(s);
+        
     }
 }
