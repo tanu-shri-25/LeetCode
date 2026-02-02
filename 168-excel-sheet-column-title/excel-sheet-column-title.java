@@ -4,9 +4,15 @@ class Solution {
       while(columnNumber>0){
         columnNumber--;
         char ch = (char)('A' + (columnNumber%26));
-        result.append(ch);
-        columnNumber = columnNumber/26;
+//         result.append(ch);
+//         columnNumber = columnNumber/26;
+//       }
+//       return result.reverse().toString();
+//     }
+// }
+       result.insert(0,ch);
+       columnNumber=columnNumber/26;
       }
-      return result.reverse().toString();
+      return result.toString();
     }
 }
